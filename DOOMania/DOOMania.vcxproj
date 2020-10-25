@@ -215,7 +215,6 @@
     <ClInclude Include="Chocolate DOOM\i_video.h" />
     <ClInclude Include="Chocolate DOOM\i_videohr.h" />
     <ClInclude Include="Chocolate DOOM\memio.h" />
-    <ClInclude Include="Chocolate DOOM\mus2mid.h" />
     <ClInclude Include="Chocolate DOOM\m_argv.h" />
     <ClInclude Include="Chocolate DOOM\m_bbox.h" />
     <ClInclude Include="Chocolate DOOM\m_cheat.h" />
@@ -447,10 +446,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Chocolate DOOM\memio.c">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Chocolate DOOM\mus2mid.c">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>

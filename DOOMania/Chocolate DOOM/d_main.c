@@ -1166,9 +1166,7 @@ void D_DoomInit_Lite(void) {
 //
 boolean D_DoomMain (void)
 {
-    int p;
     char file[256];
-    char demolumpname[9];
     int numiwadlumps;
     boolean result = false;
 
@@ -1216,7 +1214,8 @@ boolean D_DoomMain (void)
 	DEH_printf(D_DEVSTR);
     
     // Auto-detect the configuration dir.
-    M_SetConfigDir(NULL);
+    char* path2 = M_StringJoin(modPath, "\\", NULL);
+    M_SetConfigDir(path2);
     
     // init subsystems
     DEH_printf("V_Init: allocate screens.\n");
@@ -1321,8 +1320,9 @@ boolean D_DoomMain (void)
     // Autoloading things since we take command line features away
     if (gamemission < pack_chex && gamemode != shareware)
     {
-        DEH_AutoLoadPatches("mods\\DOOM\\wads");
-        W_AutoLoadWADs("mods\\DOOM\\wads");
+        char* wadPath = M_StringJoin(modPath, "\\WADs", NULL);
+        DEH_AutoLoadPatches(wadPath);
+        W_AutoLoadWADs(wadPath);
     }
 
     // Load Dehacked patches specified on the command line with -deh.

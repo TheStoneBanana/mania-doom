@@ -27,6 +27,8 @@ extern "C" {
 #include "Chocolate DOOM/z_zone.h"
 }
 
+const char* modPath;
+
 int snakeY[424/2];
 static unsigned short FramebufferCopy[432 * 240];
 int framecounter = 0;
@@ -386,6 +388,8 @@ extern "C"
 {
 	__declspec(dllexport) void Init(const char* path)
 	{
+		modPath = path;
+
 		// Only initialize DOOM once for the entire runtime
 		doomed = D_DoomMain();
 

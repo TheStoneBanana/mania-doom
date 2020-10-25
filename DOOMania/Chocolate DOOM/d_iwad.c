@@ -23,6 +23,7 @@
 
 #include "deh_str.h"
 #include "doomkeys.h"
+#include "d_main.h"
 #include "d_iwad.h"
 #include "i_system.h"
 #include "m_argv.h"
@@ -682,7 +683,7 @@ static void BuildIWADDirList(void)
 
     // Look in the current directory.  Doom always does this.
     //AddIWADDir(".");
-    AddIWADDir(".\\mods\\DOOM");
+    AddIWADDir(modPath);
 
     // Add DOOMWADDIR if it is in the environment
     env = getenv("DOOMWADDIR");

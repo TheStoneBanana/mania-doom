@@ -174,9 +174,6 @@
     <ClInclude Include="Chocolate DOOM\memio.h">
       <Filter>Source Files\DOOM</Filter>
     </ClInclude>
-    <ClInclude Include="Chocolate DOOM\mus2mid.h">
-      <Filter>Source Files\DOOM</Filter>
-    </ClInclude>
     <ClInclude Include="Chocolate DOOM\net_client.h">
       <Filter>Source Files\DOOM</Filter>
     </ClInclude>
@@ -504,9 +501,6 @@
       <Filter>Source Files\DOOM</Filter>
     </ClCompile>
     <ClCompile Include="Chocolate DOOM\memio.c">
-      <Filter>Source Files\DOOM</Filter>
-    </ClCompile>
-    <ClCompile Include="Chocolate DOOM\mus2mid.c">
       <Filter>Source Files\DOOM</Filter>
     </ClCompile>
     <ClCompile Include="Chocolate DOOM\net_client.c">

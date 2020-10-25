@@ -15,7 +15,7 @@
 // GNU General Public License for more details.
 //
 // DESCRIPTION:
-//	System interface for sound. (Loading sounds from WAD directly into Retro Engine memory, sloppily adapted from)
+//	System interface for sound. (Loading sounds from WAD directly into Retro Engine memory, sloppily adapted from 'i_sdlsound.c')
 //
 
 #include "../pch.h"
